@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FA659502D1EF36C00642F3D /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6594F2D1EF36C00642F3D /* DashboardViewModel.swift */; };
+		4FA659522D1EF49500642F3D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA659512D1EF49500642F3D /* DashboardView.swift */; };
+		4FA6596D2D203A2600642F3D /* EditSupplierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6596C2D203A1F00642F3D /* EditSupplierView.swift */; };
+		4FA659712D20486F00642F3D /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA659702D20486A00642F3D /* EditItemView.swift */; };
+		7974BBB0AB28F3501C3CF788 /* Pods_AdvanceInventorySystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757C81AD7893145CC093A32B /* Pods_AdvanceInventorySystem.framework */; };
+		95993F569FE6775310F2EB69 /* Pods_AdvanceInventorySystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204635AE2812A6E47078FB82 /* Pods_AdvanceInventorySystemTests.framework */; };
+		C072EC87481566903C8BE6A6 /* Pods_AdvanceInventorySystem_AdvanceInventorySystemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD790DDA8CBB205C2F9298F8 /* Pods_AdvanceInventorySystem_AdvanceInventorySystemUITests.framework */; };
+		CC19C4182D195FE300EDDD0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC19C4082D195FE300EDDD0F /* Preview Assets.xcassets */; };
+		CC19C4192D195FE300EDDD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC19C4162D195FE300EDDD0F /* Assets.xcassets */; };
+		CC19C41A2D195FE300EDDD0F /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C3FF2D195FE300EDDD0F /* DBHelper.swift */; };
+		CC19C41B2D195FE300EDDD0F /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4002D195FE300EDDD0F /* DBManager.swift */; };
+		CC19C41C2D195FE300EDDD0F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4022D195FE300EDDD0F /* ImagePicker.swift */; };
+		CC19C41D2D195FE300EDDD0F /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4042D195FE300EDDD0F /* History.swift */; };
+		CC19C41E2D195FE300EDDD0F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4052D195FE300EDDD0F /* Product.swift */; };
+		CC19C41F2D195FE300EDDD0F /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4062D195FE300EDDD0F /* Supplier.swift */; };
+		CC19C4202D195FE300EDDD0F /* AddHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C40A2D195FE300EDDD0F /* AddHistoryView.swift */; };
+		CC19C4212D195FE300EDDD0F /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C40B2D195FE300EDDD0F /* AddItemView.swift */; };
+		CC19C4222D195FE300EDDD0F /* AddSupplierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C40C2D195FE300EDDD0F /* AddSupplierView.swift */; };
+		CC19C4232D195FE300EDDD0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C40D2D195FE300EDDD0F /* ContentView.swift */; };
+		CC19C4242D195FE300EDDD0F /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C40E2D195FE300EDDD0F /* ItemDetailView.swift */; };
+		CC19C4252D195FE300EDDD0F /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C40F2D195FE300EDDD0F /* ItemListView.swift */; };
+		CC19C4262D195FE300EDDD0F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4102D195FE300EDDD0F /* LoginView.swift */; };
+		CC19C4272D195FE300EDDD0F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4112D195FE300EDDD0F /* RegisterView.swift */; };
+		CC19C4282D195FE300EDDD0F /* SupplierDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4122D195FE300EDDD0F /* SupplierDetailView.swift */; };
+		CC19C4292D195FE300EDDD0F /* SupplierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4132D195FE300EDDD0F /* SupplierView.swift */; };
+		CC19C42A2D195FE300EDDD0F /* AdvanceInventorySystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4152D195FE300EDDD0F /* AdvanceInventorySystemApp.swift */; };
+		CC19C4322D196D3E00EDDD0F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4312D196D3E00EDDD0F /* SearchBar.swift */; };
+		CC19C4342D196D9A00EDDD0F /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4332D196D9A00EDDD0F /* HideTabBar.swift */; };
+		CC19C4362D196DF500EDDD0F /* AnnotationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4352D196DF500EDDD0F /* AnnotationItem.swift */; };
+		CC19C4382D196E1200EDDD0F /* MapPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19C4372D196E1200EDDD0F /* MapPickerView.swift */; };
+		CC5EDF8D2D19A2C900B04B66 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF8C2D19A2C900B04B66 /* AccountView.swift */; };
+		CC5EDF8F2D19A2EC00B04B66 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF8E2D19A2EC00B04B66 /* AuthenticationViewModel.swift */; };
+		CC5EDF912D19A31800B04B66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF902D19A31800B04B66 /* User.swift */; };
+		CC5EDF942D1D526800B04B66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5EDF932D1D526800B04B66 /* GoogleService-Info.plist */; };
+		CC5EDF962D1D637D00B04B66 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF952D1D637D00B04B66 /* TransactionViewModel.swift */; };
+		CC5EDF982D1D64B600B04B66 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF972D1D64B600B04B66 /* Item.swift */; };
+		CC5EDF9C2D1D64F200B04B66 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF9B2D1D64F200B04B66 /* Transaction.swift */; };
+		CC5EDF9E2D1D651600B04B66 /* SupplierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF9D2D1D651600B04B66 /* SupplierViewModel.swift */; };
+		CC5EDFA02D1D699100B04B66 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EDF9F2D1D699100B04B66 /* ItemViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC75944A2D0FFB1A00FAE4B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7594312D0FFB1800FAE4B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7594382D0FFB1800FAE4B7;
+			remoteInfo = AdvanceInventorySystem;
+		};
+		CC7594542D0FFB1A00FAE4B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7594312D0FFB1800FAE4B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7594382D0FFB1800FAE4B7;
+			remoteInfo = AdvanceInventorySystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F5740C2BC34499F869A073 /* Pods-AdvanceInventorySystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvanceInventorySystemTests.debug.xcconfig"; path = "Target Support Files/Pods-AdvanceInventorySystemTests/Pods-AdvanceInventorySystemTests.debug.xcconfig"; sourceTree = "<group>"; };
+		204635AE2812A6E47078FB82 /* Pods_AdvanceInventorySystemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvanceInventorySystemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA71DB0EFBC5D0D47DB6075 /* Pods-AdvanceInventorySystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvanceInventorySystemTests.release.xcconfig"; path = "Target Support Files/Pods-AdvanceInventorySystemTests/Pods-AdvanceInventorySystemTests.release.xcconfig"; sourceTree = "<group>"; };
+		4750B093F65F68663CED14F7 /* Pods-AdvanceInventorySystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvanceInventorySystem.debug.xcconfig"; path = "Target Support Files/Pods-AdvanceInventorySystem/Pods-AdvanceInventorySystem.debug.xcconfig"; sourceTree = "<group>"; };
+		4FA6594F2D1EF36C00642F3D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		4FA659512D1EF49500642F3D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		4FA6596C2D203A1F00642F3D /* EditSupplierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSupplierView.swift; sourceTree = "<group>"; };
+		4FA659702D20486A00642F3D /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		757C81AD7893145CC093A32B /* Pods_AdvanceInventorySystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvanceInventorySystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFDAD0039D32B93A46EA3E9 /* Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.release.xcconfig"; path = "Target Support Files/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD790DDA8CBB205C2F9298F8 /* Pods_AdvanceInventorySystem_AdvanceInventorySystemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvanceInventorySystem_AdvanceInventorySystemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC19C3FF2D195FE300EDDD0F /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		CC19C4002D195FE300EDDD0F /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		CC19C4022D195FE300EDDD0F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CC19C4042D195FE300EDDD0F /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		CC19C4052D195FE300EDDD0F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CC19C4062D195FE300EDDD0F /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = "<group>"; };
+		CC19C4082D195FE300EDDD0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC19C40A2D195FE300EDDD0F /* AddHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHistoryView.swift; sourceTree = "<group>"; };
+		CC19C40B2D195FE300EDDD0F /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		CC19C40C2D195FE300EDDD0F /* AddSupplierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSupplierView.swift; sourceTree = "<group>"; };
+		CC19C40D2D195FE300EDDD0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC19C40E2D195FE300EDDD0F /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		CC19C40F2D195FE300EDDD0F /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		CC19C4102D195FE300EDDD0F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CC19C4112D195FE300EDDD0F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CC19C4122D195FE300EDDD0F /* SupplierDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDetailView.swift; sourceTree = "<group>"; };
+		CC19C4132D195FE300EDDD0F /* SupplierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierView.swift; sourceTree = "<group>"; };
+		CC19C4152D195FE300EDDD0F /* AdvanceInventorySystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceInventorySystemApp.swift; sourceTree = "<group>"; };
+		CC19C4162D195FE300EDDD0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC19C4312D196D3E00EDDD0F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		CC19C4332D196D9A00EDDD0F /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
+		CC19C4352D196DF500EDDD0F /* AnnotationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationItem.swift; sourceTree = "<group>"; };
+		CC19C4372D196E1200EDDD0F /* MapPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPickerView.swift; sourceTree = "<group>"; };
+		CC5EDF8C2D19A2C900B04B66 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		CC5EDF8E2D19A2EC00B04B66 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		CC5EDF902D19A31800B04B66 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CC5EDF932D1D526800B04B66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC5EDF952D1D637D00B04B66 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		CC5EDF972D1D64B600B04B66 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CC5EDF9B2D1D64F200B04B66 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CC5EDF9D2D1D651600B04B66 /* SupplierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierViewModel.swift; sourceTree = "<group>"; };
+		CC5EDF9F2D1D699100B04B66 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		CC7594392D0FFB1800FAE4B7 /* AdvanceInventorySystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvanceInventorySystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7594492D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvanceInventorySystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7594532D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvanceInventorySystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EFA411493A92767B6FF64B /* Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.debug.xcconfig"; path = "Target Support Files/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE1D33CC2D62C11A03486702 /* Pods-AdvanceInventorySystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvanceInventorySystem.release.xcconfig"; path = "Target Support Files/Pods-AdvanceInventorySystem/Pods-AdvanceInventorySystem.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CC75944C2D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AdvanceInventorySystemTests;
+			sourceTree = "<group>";
+		};
+		CC7594562D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AdvanceInventorySystemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC7594362D0FFB1800FAE4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7974BBB0AB28F3501C3CF788 /* Pods_AdvanceInventorySystem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7594462D0FFB1A00FAE4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95993F569FE6775310F2EB69 /* Pods_AdvanceInventorySystemTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7594502D0FFB1A00FAE4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C072EC87481566903C8BE6A6 /* Pods_AdvanceInventorySystem_AdvanceInventorySystemUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5AB85AC87305BE4377EBDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				757C81AD7893145CC093A32B /* Pods_AdvanceInventorySystem.framework */,
+				AD790DDA8CBB205C2F9298F8 /* Pods_AdvanceInventorySystem_AdvanceInventorySystemUITests.framework */,
+				204635AE2812A6E47078FB82 /* Pods_AdvanceInventorySystemTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BB80394284A340114AB9478 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4750B093F65F68663CED14F7 /* Pods-AdvanceInventorySystem.debug.xcconfig */,
+				DE1D33CC2D62C11A03486702 /* Pods-AdvanceInventorySystem.release.xcconfig */,
+				D9EFA411493A92767B6FF64B /* Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.debug.xcconfig */,
+				9FFDAD0039D32B93A46EA3E9 /* Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.release.xcconfig */,
+				16F5740C2BC34499F869A073 /* Pods-AdvanceInventorySystemTests.debug.xcconfig */,
+				2DA71DB0EFBC5D0D47DB6075 /* Pods-AdvanceInventorySystemTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4FA659652D20399900642F3D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CC19C4102D195FE300EDDD0F /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4FA659662D20399F00642F3D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CC19C4112D195FE300EDDD0F /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		4FA659672D2039A600642F3D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4FA659512D1EF49500642F3D /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4FA659682D2039B100642F3D /* Supplier */ = {
+			isa = PBXGroup;
+			children = (
+				4FA6596C2D203A1F00642F3D /* EditSupplierView.swift */,
+				CC19C40C2D195FE300EDDD0F /* AddSupplierView.swift */,
+				CC19C4122D195FE300EDDD0F /* SupplierDetailView.swift */,
+				CC19C4132D195FE300EDDD0F /* SupplierView.swift */,
+				CC19C4372D196E1200EDDD0F /* MapPickerView.swift */,
+			);
+			path = Supplier;
+			sourceTree = "<group>";
+		};
+		4FA659692D2039BD00642F3D /* Barang */ = {
+			isa = PBXGroup;
+			children = (
+				4FA659702D20486A00642F3D /* EditItemView.swift */,
+				CC19C40E2D195FE300EDDD0F /* ItemDetailView.swift */,
+				CC19C40F2D195FE300EDDD0F /* ItemListView.swift */,
+				CC19C40B2D195FE300EDDD0F /* AddItemView.swift */,
+			);
+			path = Barang;
+			sourceTree = "<group>";
+		};
+		4FA6596A2D2039C400642F3D /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EDF8C2D19A2C900B04B66 /* AccountView.swift */,
+			);
+			path = Profil;
+			sourceTree = "<group>";
+		};
+		4FA6596B2D2039DC00642F3D /* Transaksi */ = {
+			isa = PBXGroup;
+			children = (
+				CC19C40A2D195FE300EDDD0F /* AddHistoryView.swift */,
+			);
+			path = Transaksi;
+			sourceTree = "<group>";
+		};
+		CC19C4012D195FE300EDDD0F /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				CC19C3FF2D195FE300EDDD0F /* DBHelper.swift */,
+				CC19C4002D195FE300EDDD0F /* DBManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		CC19C4032D195FE300EDDD0F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CC19C4332D196D9A00EDDD0F /* HideTabBar.swift */,
+				CC19C4312D196D3E00EDDD0F /* SearchBar.swift */,
+				CC19C4022D195FE300EDDD0F /* ImagePicker.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CC19C4072D195FE300EDDD0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EDF9B2D1D64F200B04B66 /* Transaction.swift */,
+				CC5EDF972D1D64B600B04B66 /* Item.swift */,
+				CC5EDF902D19A31800B04B66 /* User.swift */,
+				CC19C4042D195FE300EDDD0F /* History.swift */,
+				CC19C4052D195FE300EDDD0F /* Product.swift */,
+				CC19C4062D195FE300EDDD0F /* Supplier.swift */,
+				CC19C4352D196DF500EDDD0F /* AnnotationItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC19C4092D195FE300EDDD0F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CC19C4082D195FE300EDDD0F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC19C4142D195FE300EDDD0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FA6596B2D2039DC00642F3D /* Transaksi */,
+				4FA6596A2D2039C400642F3D /* Profil */,
+				4FA659692D2039BD00642F3D /* Barang */,
+				4FA659682D2039B100642F3D /* Supplier */,
+				4FA659672D2039A600642F3D /* Dashboard */,
+				4FA659662D20399F00642F3D /* Register */,
+				4FA659652D20399900642F3D /* Login */,
+				CC19C40D2D195FE300EDDD0F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC19C4172D195FE300EDDD0F /* AdvanceInventorySystem */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EDF932D1D526800B04B66 /* GoogleService-Info.plist */,
+				CC5EDF922D19A41500B04B66 /* ViewModel */,
+				CC19C4012D195FE300EDDD0F /* DB */,
+				CC19C4032D195FE300EDDD0F /* Helper */,
+				CC19C4072D195FE300EDDD0F /* Model */,
+				CC19C4092D195FE300EDDD0F /* Preview Content */,
+				CC19C4142D195FE300EDDD0F /* View */,
+				CC19C4152D195FE300EDDD0F /* AdvanceInventorySystemApp.swift */,
+				CC19C4162D195FE300EDDD0F /* Assets.xcassets */,
+			);
+			path = AdvanceInventorySystem;
+			sourceTree = "<group>";
+		};
+		CC5EDF922D19A41500B04B66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FA6594F2D1EF36C00642F3D /* DashboardViewModel.swift */,
+				CC5EDF9F2D1D699100B04B66 /* ItemViewModel.swift */,
+				CC5EDF9D2D1D651600B04B66 /* SupplierViewModel.swift */,
+				CC5EDF8E2D19A2EC00B04B66 /* AuthenticationViewModel.swift */,
+				CC5EDF952D1D637D00B04B66 /* TransactionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CC7594302D0FFB1800FAE4B7 = {
+			isa = PBXGroup;
+			children = (
+				CC19C4172D195FE300EDDD0F /* AdvanceInventorySystem */,
+				CC75944C2D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests */,
+				CC7594562D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests */,
+				CC75943A2D0FFB1800FAE4B7 /* Products */,
+				4BB80394284A340114AB9478 /* Pods */,
+				2A5AB85AC87305BE4377EBDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC75943A2D0FFB1800FAE4B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC7594392D0FFB1800FAE4B7 /* AdvanceInventorySystem.app */,
+				CC7594492D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests.xctest */,
+				CC7594532D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC7594382D0FFB1800FAE4B7 /* AdvanceInventorySystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC75945D2D0FFB1A00FAE4B7 /* Build configuration list for PBXNativeTarget "AdvanceInventorySystem" */;
+			buildPhases = (
+				E0CD7E01D07EE8F7E635D7EC /* [CP] Check Pods Manifest.lock */,
+				CC7594352D0FFB1800FAE4B7 /* Sources */,
+				CC7594362D0FFB1800FAE4B7 /* Frameworks */,
+				CC7594372D0FFB1800FAE4B7 /* Resources */,
+				AF60504C1D44189083E9CC5F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdvanceInventorySystem;
+			productName = AdvanceInventorySystem;
+			productReference = CC7594392D0FFB1800FAE4B7 /* AdvanceInventorySystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC7594482D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7594602D0FFB1A00FAE4B7 /* Build configuration list for PBXNativeTarget "AdvanceInventorySystemTests" */;
+			buildPhases = (
+				6AB976D36F2DAEF351F3CC34 /* [CP] Check Pods Manifest.lock */,
+				CC7594452D0FFB1A00FAE4B7 /* Sources */,
+				CC7594462D0FFB1A00FAE4B7 /* Frameworks */,
+				CC7594472D0FFB1A00FAE4B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC75944B2D0FFB1A00FAE4B7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CC75944C2D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests */,
+			);
+			name = AdvanceInventorySystemTests;
+			productName = AdvanceInventorySystemTests;
+			productReference = CC7594492D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC7594522D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7594632D0FFB1A00FAE4B7 /* Build configuration list for PBXNativeTarget "AdvanceInventorySystemUITests" */;
+			buildPhases = (
+				A0753013BD52C3012CF756D6 /* [CP] Check Pods Manifest.lock */,
+				CC75944F2D0FFB1A00FAE4B7 /* Sources */,
+				CC7594502D0FFB1A00FAE4B7 /* Frameworks */,
+				CC7594512D0FFB1A00FAE4B7 /* Resources */,
+				168A13820831D02606528FAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7594552D0FFB1A00FAE4B7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CC7594562D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests */,
+			);
+			name = AdvanceInventorySystemUITests;
+			productName = AdvanceInventorySystemUITests;
+			productReference = CC7594532D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC7594312D0FFB1800FAE4B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					CC7594382D0FFB1800FAE4B7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CC7594482D0FFB1A00FAE4B7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CC7594382D0FFB1800FAE4B7;
+					};
+					CC7594522D0FFB1A00FAE4B7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CC7594382D0FFB1800FAE4B7;
+					};
+				};
+			};
+			buildConfigurationList = CC7594342D0FFB1800FAE4B7 /* Build configuration list for PBXProject "AdvanceInventorySystem" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC7594302D0FFB1800FAE4B7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CC75943A2D0FFB1800FAE4B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC7594382D0FFB1800FAE4B7 /* AdvanceInventorySystem */,
+				CC7594482D0FFB1A00FAE4B7 /* AdvanceInventorySystemTests */,
+				CC7594522D0FFB1A00FAE4B7 /* AdvanceInventorySystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC7594372D0FFB1800FAE4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC19C4182D195FE300EDDD0F /* Preview Assets.xcassets in Resources */,
+				CC19C4192D195FE300EDDD0F /* Assets.xcassets in Resources */,
+				CC5EDF942D1D526800B04B66 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7594472D0FFB1A00FAE4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7594512D0FFB1A00FAE4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		168A13820831D02606528FAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AB976D36F2DAEF351F3CC34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvanceInventorySystemTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0753013BD52C3012CF756D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF60504C1D44189083E9CC5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvanceInventorySystem/Pods-AdvanceInventorySystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvanceInventorySystem/Pods-AdvanceInventorySystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdvanceInventorySystem/Pods-AdvanceInventorySystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0CD7E01D07EE8F7E635D7EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvanceInventorySystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC7594352D0FFB1800FAE4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC19C41A2D195FE300EDDD0F /* DBHelper.swift in Sources */,
+				CC19C41B2D195FE300EDDD0F /* DBManager.swift in Sources */,
+				CC19C41C2D195FE300EDDD0F /* ImagePicker.swift in Sources */,
+				CC5EDF8F2D19A2EC00B04B66 /* AuthenticationViewModel.swift in Sources */,
+				CC19C41D2D195FE300EDDD0F /* History.swift in Sources */,
+				CC5EDF8D2D19A2C900B04B66 /* AccountView.swift in Sources */,
+				4FA6596D2D203A2600642F3D /* EditSupplierView.swift in Sources */,
+				CC19C41E2D195FE300EDDD0F /* Product.swift in Sources */,
+				CC5EDF9E2D1D651600B04B66 /* SupplierViewModel.swift in Sources */,
+				CC19C4362D196DF500EDDD0F /* AnnotationItem.swift in Sources */,
+				CC19C4322D196D3E00EDDD0F /* SearchBar.swift in Sources */,
+				CC19C41F2D195FE300EDDD0F /* Supplier.swift in Sources */,
+				CC19C4202D195FE300EDDD0F /* AddHistoryView.swift in Sources */,
+				CC19C4212D195FE300EDDD0F /* AddItemView.swift in Sources */,
+				CC19C4222D195FE300EDDD0F /* AddSupplierView.swift in Sources */,
+				CC5EDF9C2D1D64F200B04B66 /* Transaction.swift in Sources */,
+				CC19C4342D196D9A00EDDD0F /* HideTabBar.swift in Sources */,
+				4FA659712D20486F00642F3D /* EditItemView.swift in Sources */,
+				CC19C4232D195FE300EDDD0F /* ContentView.swift in Sources */,
+				CC19C4242D195FE300EDDD0F /* ItemDetailView.swift in Sources */,
+				CC19C4252D195FE300EDDD0F /* ItemListView.swift in Sources */,
+				CC19C4262D195FE300EDDD0F /* LoginView.swift in Sources */,
+				CC19C4272D195FE300EDDD0F /* RegisterView.swift in Sources */,
+				4FA659502D1EF36C00642F3D /* DashboardViewModel.swift in Sources */,
+				CC5EDF962D1D637D00B04B66 /* TransactionViewModel.swift in Sources */,
+				CC5EDFA02D1D699100B04B66 /* ItemViewModel.swift in Sources */,
+				CC5EDF982D1D64B600B04B66 /* Item.swift in Sources */,
+				4FA659522D1EF49500642F3D /* DashboardView.swift in Sources */,
+				CC19C4382D196E1200EDDD0F /* MapPickerView.swift in Sources */,
+				CC5EDF912D19A31800B04B66 /* User.swift in Sources */,
+				CC19C4282D195FE300EDDD0F /* SupplierDetailView.swift in Sources */,
+				CC19C4292D195FE300EDDD0F /* SupplierView.swift in Sources */,
+				CC19C42A2D195FE300EDDD0F /* AdvanceInventorySystemApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7594452D0FFB1A00FAE4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC75944F2D0FFB1A00FAE4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC75944B2D0FFB1A00FAE4B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7594382D0FFB1800FAE4B7 /* AdvanceInventorySystem */;
+			targetProxy = CC75944A2D0FFB1A00FAE4B7 /* PBXContainerItemProxy */;
+		};
+		CC7594552D0FFB1A00FAE4B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7594382D0FFB1800FAE4B7 /* AdvanceInventorySystem */;
+			targetProxy = CC7594542D0FFB1A00FAE4B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC75945B2D0FFB1A00FAE4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC75945C2D0FFB1A00FAE4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC75945E2D0FFB1A00FAE4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4750B093F65F68663CED14F7 /* Pods-AdvanceInventorySystem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdvanceInventorySystem/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to get supplier location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlinads.AdvanceInventorySystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC75945F2D0FFB1A00FAE4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1D33CC2D62C11A03486702 /* Pods-AdvanceInventorySystem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdvanceInventorySystem/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to get supplier location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlinads.AdvanceInventorySystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC7594612D0FFB1A00FAE4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F5740C2BC34499F869A073 /* Pods-AdvanceInventorySystemTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlinads.AdvanceInventorySystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvanceInventorySystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdvanceInventorySystem";
+			};
+			name = Debug;
+		};
+		CC7594622D0FFB1A00FAE4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA71DB0EFBC5D0D47DB6075 /* Pods-AdvanceInventorySystemTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlinads.AdvanceInventorySystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvanceInventorySystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdvanceInventorySystem";
+			};
+			name = Release;
+		};
+		CC7594642D0FFB1A00FAE4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EFA411493A92767B6FF64B /* Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlinads.AdvanceInventorySystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvanceInventorySystem;
+			};
+			name = Debug;
+		};
+		CC7594652D0FFB1A00FAE4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FFDAD0039D32B93A46EA3E9 /* Pods-AdvanceInventorySystem-AdvanceInventorySystemUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlinads.AdvanceInventorySystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvanceInventorySystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC7594342D0FFB1800FAE4B7 /* Build configuration list for PBXProject "AdvanceInventorySystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC75945B2D0FFB1A00FAE4B7 /* Debug */,
+				CC75945C2D0FFB1A00FAE4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC75945D2D0FFB1A00FAE4B7 /* Build configuration list for PBXNativeTarget "AdvanceInventorySystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC75945E2D0FFB1A00FAE4B7 /* Debug */,
+				CC75945F2D0FFB1A00FAE4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7594602D0FFB1A00FAE4B7 /* Build configuration list for PBXNativeTarget "AdvanceInventorySystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7594612D0FFB1A00FAE4B7 /* Debug */,
+				CC7594622D0FFB1A00FAE4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7594632D0FFB1A00FAE4B7 /* Build configuration list for PBXNativeTarget "AdvanceInventorySystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7594642D0FFB1A00FAE4B7 /* Debug */,
+				CC7594652D0FFB1A00FAE4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC7594312D0FFB1800FAE4B7 /* Project object */;
+}
